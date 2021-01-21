@@ -1,0 +1,102 @@
+body{
+    font-size:20px;
+    color: #fff;
+    background-color: #ffff99;
+    font-family: 'Fraunces', serif;
+}
+
+/** HEADER **/
+#header-nav{
+    background-color: aqua;
+    border-radius: 0;
+    border: 0;
+}
+
+#ourmenu{
+    color:black;
+}
+
+#backtotop{
+    text-align: center;
+}
+
+.navbar-brand{
+    padding-top: 25px;
+}
+.navbar-brand h1{ /* Company's Name */
+    font-family:'Lora', serif;
+    color:aquamarine;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top:0;
+    margin-bottom: 0;
+    line-height:0.75;
+}
+#nav-list{
+    margin-top: 15px;
+}
+#nav-list a {
+    color:red;
+    text-align: center;
+}
+
+.navbar-header button.navbar-toggle{
+    clear:both;
+    margin-top: -30px;
+}
+
+/* End Header */
+
+/* HOME PAGE */
+.container .jumbotron {
+    background-color: black;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0c1F
+}
+/* END HOME PAGE*/
+
+
+
+/******** LARGE DEVICE ONLY ***********/
+@media (min-width:1200px){
+    .container .jumbotron{
+        height:1000px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .container .jumbotron{
+         height: 1000px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Home Page*/
+    .container .jumbotron{
+        height: 1000px;
+    }
+    /*End of Home Page*/
+}
+
+@media (max-width: 767px){
+    /*Header*/
+    .navbar-brand{
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1{
+        padding-top:10px;
+        font-size: 5vw;
+    }
+    #collapsable-nav a{
+        font-size: 1.2em;
+    }
+    /* End Header */
+
+    /* Home Page */
+    .container .jumbotron{
+        height: 1000px;
+        margin-top: 30px;
+    }
+}
